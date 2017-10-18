@@ -1,34 +1,46 @@
-Aluno: (Coloque aqui o seu nome e matricula)
+Aluno: (Vander Quintanilha)
 Trabalho de Laboratorio de Sistemas Operacionais
 Professor: Alex Salgado
-1o. Semestre de 2017   Turno: ????
+1o. Semestre de 2017   Turno: Noite
 --------------------------------------------------
 Com relação aos comandos do SO Linux, responda as perguntas abaixo:
 
 1 - Qual o comando linux para imprimir uma string na tela?
 Resposta: 
 
+echo string
+
 2 - Quais são os 3 comandos linux para mostrar o diretório corrente, 
 listar todos os arquivos da pasta atual e mudar de diretório?
 Resposta: 
+pwd, ls , cd
 
 3 - Existe um arquivo chamado access.log na sua pasta atual. Qual é o 
 comando para exibir as últimas 3 linhas deste arquivo?
 Resposta:
 
+tail -3 access.log
+
 4 - Crie 3 arquivos em branco que comecem com seu nome e termina com uma sequencia 1, 2 e 3. 
 Ex.: alex1.txt, alex2.txt, alex3.txt. Que comandos você utilizou?
 Resposta:
+
+touch vander1.txt vander2.txt vander3.txt
 
 5 - Crie 1 pasta com seu nome+diadenascimento (ex.:alex25) e copie os 3 arquivos criandos 
 anteriormente para esta pasta.
 Resposta:
 
+mkdir vander28; 
+cp vander1.txt vander2.txt vander3.txt vander28
+
 6 - A partir de sua pasta original, usando o comando find do linux, 
 diga quantos diretorios existem cujo nome começa com "pasta"?
-Resposta1 (comando linux usado):
+Resposta1 (find -type f -name 'pasta' ):
 
-Resposta2 (numero de diretorios encontrados) : 
+
+
+Resposta2 (3) : 
 
 
 7 - Qual o comando linux para: 
@@ -36,5 +48,9 @@ Extrair todos os enderecos IP dos arquivos
 que começam com "access.log" imprimindo um endereço IP por linha.
 Resposta: 
 
+sort -u access.log 
+
 8 - listar o conteudo de seu diretorio e direcionar a saida 
 para o primeiro arquivo do item 4.
+
+cat trabalho1-labso < vander1.txt
